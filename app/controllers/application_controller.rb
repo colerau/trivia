@@ -37,7 +37,13 @@ class ApplicationController < Sinatra::Base
         erb :"/application/trivia_sheet"
     end
 
-    get '/after_trivia_sheet' do 
-        binding.pry
+    post '/after_trivia_sheet' do 
+        @team1score = (
+            (params[:t1r1q1].to_i) + (params[:t1r1q2].to_i) + (params[:t1r1q3].to_i) + (params[:t1r1q4].to_i) + (params[:t1r2q1].to_i) + (params[:t1r2q2].to_i) + (params[:t1r2q3].to_i) + (params[:t1r2q4].to_i) + (params[:t1r3q1].to_i) + (params[:t1r3q2].to_i) + (params[:t1r3q3].to_i) + (params[:t1r3q4].to_i) + (params[:t1r4q1].to_i) + (params[:t1r4q2].to_i) + (params[:t1r4q3].to_i) + (params[:t1r4q4].to_i)
+            )
+            
+            binding.pry
+        
     end
+    
 end
