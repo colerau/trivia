@@ -8,8 +8,5 @@ if defined?(ActiveRecord::Migrator) && ActiveRecord::Migrator.needs_migration?
 end
 
 use Rack::MethodOverride
-# use SessionsController
-# use BooksController 
-# use ReviewsController
-# use UsersController
+use TeamsController
 run ApplicationController
