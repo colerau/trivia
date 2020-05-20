@@ -22,4 +22,16 @@ class ApplicationController < Sinatra::Base
         erb :"/application/start"
     end
 
+    post '/start' do 
+        binding.pry
+        @num_teams = params[:num_teams]
+        @num_qs = params[:num_qs]
+        @num_rounds = params[:num_rounds]
+
+        erb :"/application/more_qs"
+    end
+
+    get '/more_qs' do 
+        
+    end
 end
