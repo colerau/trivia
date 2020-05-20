@@ -40,5 +40,8 @@ class ApplicationController < Sinatra::Base
 
         erb :"/application/trivia_sheet"
     end
-    
+
+    get '/after_trivia_sheet' do 
+        binding.pry
+    end
 end

@@ -1,1 +1,10 @@
 <% binding.pry %> 
+
+<form method="post" action="/after_trivia_sheet">
+    <% @num_rounds.to_i.times do %> 
+        <% @num_qs.to_i.times do %> 
+            <%= "#{@team1name}'s score: %> 
+        <% end %> 
+    <% end %> 
+
+</form> 
