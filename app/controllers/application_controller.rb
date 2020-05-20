@@ -22,16 +22,23 @@ class ApplicationController < Sinatra::Base
         erb :"/application/start"
     end
 
-    post '/start' do 
+    post '/after_start' do 
         binding.pry
-        @num_teams = params[:num_teams]
+        @team1name = params[:team1name]
+        @team2name = params[:team2name]
+        @team3name = params[:team3name]
+        @team4name = params[:team4name]
+        @team5name = params[:team5name]
+        @team6name = params[:team6name]
+        @team7name = params[:team7name]
+        @team8name = params[:team8name]
+        @team9name = params[:team9name]
+        @team10name = params[:team10name]
+
         @num_qs = params[:num_qs]
         @num_rounds = params[:num_rounds]
 
-        erb :"/application/more_qs"
+        erb :"/application/trivia_sheet"
     end
-
-    post '/more_qs' do 
-        binding.pry
-    end
+    
 end
