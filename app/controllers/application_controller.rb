@@ -18,4 +18,8 @@ class ApplicationController < Sinatra::Base
       erb :"/application/home"
     end
 
+    get '/start' do 
+        erb :"/application/start"
+    end
+
 end
