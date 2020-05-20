@@ -35,9 +35,6 @@ class ApplicationController < Sinatra::Base
         @team9name = params[:team9name]
         @team10name = params[:team10name]
 
-        @num_qs = params[:num_qs]
-        @num_rounds = params[:num_rounds]
-
         erb :"/application/trivia_sheet"
     end
 
