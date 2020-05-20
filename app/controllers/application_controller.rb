@@ -22,8 +22,7 @@ class ApplicationController < Sinatra::Base
         erb :"/application/start"
     end
 
-    post '/after_start' do 
-        binding.pry
+    post '/after_start' do
         @team1name = params[:team1name]
         @team2name = params[:team2name]
         @team3name = params[:team3name]
