@@ -1,1 +1,10 @@
 <% binding.pry %> 
+
+<form method="post" action="/more_qs">
+<% i = 0 %> 
+<% @num_teams.to_i.times do %> 
+    Team <%="#{i+1}'s"%> Name: <input type="text" name="names[]"> 
+    <% i += 1 %> <br> 
+<% end %> 
+<br> <input type="submit"> 
+</form> 

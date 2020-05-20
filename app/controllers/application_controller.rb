@@ -31,7 +31,7 @@ class ApplicationController < Sinatra::Base
         erb :"/application/more_qs"
     end
 
-    get '/more_qs' do 
-        
+    post '/more_qs' do 
+        binding.pry
     end
 end
